@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0869e735c35e4343828e496f4a653f7, type: 3}
+  m_Name: InitialDagger
+  m_EditorClassIdentifier: 
+  Name: Daga del Saqueador
+  Icon: {fileID: 1801263428120863714, guid: 6cec10f7e04775b40a2335dea2ca2e21, type: 3}
+  Description: Daga del saqueador tus abes
+  IsDefaultItem: 0
+  equipmentSlot: 4
+  MaxHealth: 15
+  Damage: 10
+  CriticalChance: 0
+  CriticalDamage: 0
+  Defense: 0
+  MovementSpeed: 0
+  AttackSpeed: 0
+  Luck: 0
+  MaxHealthPercent: 0
+  DamagePercent: 0
+  CriticalChancePercent: 0
+  CriticalDamagePercent: 0
+  DefensePercent: 0
+  MovementSpeedPercent: 0
+  AttackSpeedPercent: 0
+  LuckPercent: 0

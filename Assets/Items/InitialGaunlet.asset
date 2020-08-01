@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0869e735c35e4343828e496f4a653f7, type: 3}
+  m_Name: InitialGaunlet
+  m_EditorClassIdentifier: 
+  Name: Initial Gaunlet
+  Icon: {fileID: 5624228601591108982, guid: 66aa6489bf733044ea92ddfd77076292, type: 3}
+  Description: Guantes Iniciales
+  IsDefaultItem: 0
+  equipmentSlot: 5
+  MaxHealth: 1
+  Damage: 0
+  CriticalChance: 1
+  CriticalDamage: 1
+  Defense: 1
+  MovementSpeed: 0
+  AttackSpeed: 0.01
+  Luck: 0.1
+  MaxHealthPercent: 0
+  DamagePercent: 0
+  CriticalChancePercent: 0
+  CriticalDamagePercent: 0
+  DefensePercent: 0
+  MovementSpeedPercent: 0
+  AttackSpeedPercent: 0
+  LuckPercent: 0
