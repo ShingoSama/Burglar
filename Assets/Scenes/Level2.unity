@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -191,7 +191,7 @@ PrefabInstance:
     - target: {fileID: 3738808976825558776, guid: 24ed33f1bdba7f24db7fb5e143f5b51e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.846169
+      value: -9.17411
       objectReference: {fileID: 0}
     - target: {fileID: 3738808976825558776, guid: 24ed33f1bdba7f24db7fb5e143f5b51e,
         type: 3}
@@ -236,7 +236,7 @@ PrefabInstance:
     - target: {fileID: 3738808978326509132, guid: 24ed33f1bdba7f24db7fb5e143f5b51e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.4516455
+      value: 6.252069
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24ed33f1bdba7f24db7fb5e143f5b51e, type: 3}
@@ -6622,6 +6622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   previousScene: {fileID: 1100794105}
   nextScene: Level1
+  levelLoader: {fileID: 1700043933}
 --- !u!1 &922714993
 GameObject:
   m_ObjectHideFlags: 0
@@ -20314,6 +20315,18 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!114 &1700043933 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7485560135441396941, guid: a2d3d7e58527b0349984a367e6ddd2e8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1127703236}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a61bdb2e06c21e747a4ea05aee791c91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1706465490
 PrefabInstance:
   m_ObjectHideFlags: 0

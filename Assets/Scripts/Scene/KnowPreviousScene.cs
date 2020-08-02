@@ -20,7 +20,10 @@ public class KnowPreviousScene : MonoBehaviour
             DontDestroyOnLoad(this);
         }
         knowPreviousScene.previousNameScene = PlayerPrefs.GetString("LastScene");
-        PlayerLocationScene.SetLocation(knowPreviousScene.previousNameScene);
+        if (PlayerLocationScene != null)
+        {
+            PlayerLocationScene.SetLocation(knowPreviousScene.previousNameScene);
+        }
     }
     public void BeforeChangeScene(string name)
     {

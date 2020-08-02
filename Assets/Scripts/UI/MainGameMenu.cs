@@ -14,10 +14,11 @@ public class MainGameMenu : MonoBehaviour
     public GameObject MainGameMenuUI;
     public GameObject OptionsMainGameMenuUI;
     public InventoryUI inventoryUI;
+    public LevelLoader levelLoader;
     private bool isInInventaryUI;
     public void StartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        levelLoader.StartChangeScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     private void Update()
     {
