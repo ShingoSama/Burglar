@@ -17,7 +17,7 @@ public class Ladder : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player")|| collision.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
             if (Input.GetAxis("Vertical") > 0f)
             {
