@@ -8,8 +8,8 @@ public class Ladder : MonoBehaviour
     private EdgeCollider2D edgeCollider2D;
     private void Start()
     {
-        effector2D = gameObject.GetComponent<PlatformEffector2D>();
-        edgeCollider2D = gameObject.GetComponent<EdgeCollider2D>();
+        effector2D = gameObject.GetComponentInParent<PlatformEffector2D>();
+        edgeCollider2D = gameObject.GetComponentInParent<EdgeCollider2D>();
     }
     void Update()
     {
@@ -21,15 +21,12 @@ public class Ladder : MonoBehaviour
         {
             if (Input.GetAxis("Vertical") > 0f)
             {
-                collision.gameObject.GetComponent<PlayerController>().ClimbLadder();
                 effector2D.rotationalOffset = 0f;
                 edgeCollider2D.enabled = false;
                 collision.gameObject.GetComponent<PlayerController>().ClimbLadderMove(1f);
             }
             if (Input.GetAxis("Vertical") < 0f)
             {
-                collision.gameObject.GetComponent<PlayerController>().ClimbLadder();
-                Debug.Log("quierobajar");
                 effector2D.rotationalOffset = 180f;
                 edgeCollider2D.enabled = false;
                 collision.gameObject.GetComponent<PlayerController>().ClimbLadderMove(-1f);

@@ -27,10 +27,15 @@ public class PlatformManager : MonoBehaviour
     {
         
     }
-
-    IEnumerator ReSpawnPlatforms(Vector2 position)
+    public void ReSpawn(Vector2 position, float timeToRespawn, float timeToDestroy)
     {
-        yield return new WaitForSeconds(3.5f);
+        StartCoroutine(ReSpawnPlatforms(position, timeToRespawn, timeToDestroy));
+    }
+    IEnumerator ReSpawnPlatforms(Vector2 position, float timeToRespawn, float timeToDestroy)
+    {
+        yield return new WaitForSeconds(timeToRespawn);
+        prefabPlatForm.gameObject.GetComponent<VanishPlatform>().timeToRespawn = timeToRespawn;
+        prefabPlatForm.gameObject.GetComponent<VanishPlatform>().timeToDestroy = timeToDestroy;
         Instantiate(prefabPlatForm, position, prefabPlatForm.transform.rotation);
     }
 }

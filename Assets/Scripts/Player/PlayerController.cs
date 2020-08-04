@@ -72,11 +72,24 @@ public class PlayerController : MonoBehaviour
             isInInventaryUI = inventoryUI.GetInventoryUIActive();
             if (!isTakeDamage)
             {
+                isGrounded = Physics2D.OverlapCircle(groundCheckPlayer.position, groundCheckRadius, groundLayer);
                 //Movimiento
                 if (!isAttacking && !isInMenuUI && !isInInventaryUI)
                 {
                     float horizontalInput = Input.GetAxisRaw("Horizontal");
-                    _movementPlayer = new Vector2(horizontalInput, 0f);
+                    float verticalInput = Input.GetAxisRaw("Vertical");
+                    if (inLadder && verticalInput != 0)
+                    {
+                        ClimbLadderMove(verticalInput);
+                    }
+                    if (inLadder && !isGrounded)
+                    {
+                        _movementPlayer = Vector2.zero;
+                    }
+                    else
+                    {
+                        _movementPlayer = new Vector2(horizontalInput, 0f);
+                    }
 
                     if (horizontalInput < 0f && facingRight == true)
                     {
@@ -87,7 +100,7 @@ public class PlayerController : MonoBehaviour
                         FlipPlayer();
                     }
                     //Salto
-                    isGrounded = Physics2D.OverlapCircle(groundCheckPlayer.position, groundCheckRadius, groundLayer);
+                    
                     if (Input.GetButtonDown("Jump") && Input.GetAxisRaw("Vertical") == 0f && isGrounded == true && isAttacking == false)
                     {
                         _rigidbody2DPlayer.AddForce(Vector2.up * jumpforcePlayer, ForceMode2D.Impulse);
@@ -108,7 +121,7 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (!isAttacking)
+        if ((!isAttacking && !inLadder)||(inLadder && isGrounded))
         {
             float horizontalVelocity = _movementPlayer.normalized.x * speedPlayer;
             _rigidbody2DPlayer.velocity = new Vector2(horizontalVelocity, _rigidbody2DPlayer.velocity.y);
@@ -117,7 +130,14 @@ public class PlayerController : MonoBehaviour
     private void LateUpdate()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheckPlayer.position, groundCheckRadius, groundLayer);
-        _animatorPlayer.SetBool("Idle", _movementPlayer == Vector2.zero);
+        if (inLadder && !isGrounded)
+        {
+            _animatorPlayer.SetBool("Idle", false);
+        }
+        else
+        {
+            _animatorPlayer.SetBool("Idle", _movementPlayer == Vector2.zero);
+        }
         _animatorPlayer.SetBool("IsGrounded", isGrounded);
         _animatorPlayer.SetFloat("VerticalVelocity", _rigidbody2DPlayer.velocity.y);
         //Animacion de ataque
@@ -260,6 +280,8 @@ public class PlayerController : MonoBehaviour
     }
     public void ClimbLadderMove(float direccion)
     {
+        inLadder = true;
+        _animatorPlayer.SetBool("InLadder", inLadder);
         if (direccion == 0f)
         {
             inLadderMoving = false;
@@ -276,6 +298,8 @@ public class PlayerController : MonoBehaviour
     {
         _rigidbody2DPlayer.gravityScale = 3;
         inLadder = false;
+        inLadderMoving = false;
+        _animatorPlayer.SetBool("InLadderMoving", inLadderMoving);
         _animatorPlayer.SetBool("InLadder", inLadder);
     }
     public bool GetInLadder()
