@@ -85,7 +85,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9028141607813583952}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.111, y: -1.118, z: 0}
+  m_LocalPosition: {x: 0.45, y: -1.118, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 9028141607889060818}
@@ -250,8 +250,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   entity: {fileID: 11400000, guid: 4a5ad844b7f487b4d87034248ea9f810, type: 2}
-  groundCheckDistance: 0.01
-  wallCheckDistance: 0.15
+  groundCheckDistance: 0.1
+  wallCheckDistance: 0.2
   groundCheck: {fileID: 9028141607813583959}
   wallCheck: {fileID: 9028141608482814085}
   attackMelee: {fileID: 9028141609120806886}
@@ -342,7 +342,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.6276433, y: 0.03949058}
+  m_Offset: {x: 1.5242977, y: 0.03949058}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -353,7 +353,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.7751288, y: 1.5755541}
+  m_Size: {x: 3.5684376, y: 1.5755541}
   m_EdgeRadius: 0
 --- !u!1 &9028141609330258952
 GameObject:
@@ -406,10 +406,10 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9028141609330258952}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.005571127}

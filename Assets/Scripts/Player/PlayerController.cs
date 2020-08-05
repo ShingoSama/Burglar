@@ -188,6 +188,18 @@ public class PlayerController : MonoBehaviour
         //    }
         //}
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            Debug.Log(collision.relativeVelocity.y);
+            if (collision.relativeVelocity.y > 30f)
+            {
+                float damageFall = ((MaxHealth * (collision.relativeVelocity.y - 30f)) / 100f);
+                TakeDamage(damageFall, transform.position.x);
+            }
+        }
+    }
     private void InteractWithEnviroment()
     {
         Collider2D[] hitTargets = Physics2D.OverlapCircleAll(attackPointUnEquipPlayer.position, attackRangeUnEquipPlayer);
