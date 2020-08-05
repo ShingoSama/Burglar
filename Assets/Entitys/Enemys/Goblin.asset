@@ -17,6 +17,6 @@ MonoBehaviour:
   Damage: 10
   Defense: 5
   AgroRange: 1
-  MovementNormalSpeed: 0.5
-  MovementAgroSpeed: 1
+  MovementNormalSpeed: 3
+  MovementAgroSpeed: 4
   Experience: 5
