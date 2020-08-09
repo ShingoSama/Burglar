@@ -16,19 +16,17 @@ public class OneWayPlatform : MonoBehaviour
     {
         if(Input.GetButtonDown("Jump") && Input.GetAxisRaw("Vertical") < 0f )
         {
-            if(waitTime < Time.time)
+            if (waitTime < Time.time)
             {
-                effector2D.rotationalOffset = 180f;
+                StartCoroutine(FallTimer());
                 waitTime = Time.time + 0.5f;
             }
         }
-        if ((Input.GetButtonDown("Jump") && Input.GetAxisRaw("Vertical") == 0f) || Input.GetAxisRaw("Vertical") > 0f)
-        {
-            effector2D.rotationalOffset = 0f;
-        }
-        if (waitTime < Time.time)
-        {
-            effector2D.rotationalOffset = 0f;
-        }
+    }
+    IEnumerator FallTimer()
+    {
+        effector2D.rotationalOffset = 180f;
+        yield return new WaitForSeconds(0.5f);
+        effector2D.rotationalOffset = 0f;
     }
 }

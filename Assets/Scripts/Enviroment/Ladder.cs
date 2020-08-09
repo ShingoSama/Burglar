@@ -33,6 +33,8 @@ public class Ladder : MonoBehaviour
             }
             if (Input.GetAxisRaw("Vertical") == 0f && collision.gameObject.GetComponent<PlayerController>().GetInLadder())
             {
+                effector2D.rotationalOffset = 0f;
+                edgeCollider2D.enabled = false;
                 collision.gameObject.GetComponent<PlayerController>().ClimbLadder();
                 collision.gameObject.GetComponent<PlayerController>().ClimbLadderMove(0f);
             }

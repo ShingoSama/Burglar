@@ -27,7 +27,9 @@ public class Enemy : MonoBehaviour
     private float currentHealth { get; set; }
     private int facingDirection { get; set; }
     private float nextAttackTime { get; set; }
+    private float nextTouchDamage { get; set; }
     private float attackRate { get; set; }
+    private float touchDamage { get; set; }
     private float timeTakeDamage { get; set; }
     private float movementSpeed { get; set; }
     private float movementNormalSpeed { get; set; }
@@ -69,6 +71,8 @@ public class Enemy : MonoBehaviour
         facingDirection = 1;
         nextAttackTime = 0f;
         attackRate = 1f;
+        nextTouchDamage = 0f;
+        touchDamage = 1f;
     }
     void Start()
     {
@@ -162,7 +166,15 @@ public class Enemy : MonoBehaviour
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
-
+        if(collision.gameObject.CompareTag("Player"))
+        {
+            if (Time.time >= nextTouchDamage)
+            {
+                nextTouchDamage = Time.time + touchDamage;
+                collision.gameObject.GetComponent<PlayerController>().TakeDamage(attackDamage, gameObject.transform.position.x);
+            }
+            Debug.Log("Toca el player");
+        }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {

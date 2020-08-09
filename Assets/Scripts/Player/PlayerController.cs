@@ -49,11 +49,6 @@ public class PlayerController : MonoBehaviour
     private bool isInInventaryUI;
 
     private float MaxHealth;
-
-    void Start()
-    {
-
-    }
     void Awake()
     {
         mainGameMenu.PlayerDead(isDead);
@@ -64,6 +59,11 @@ public class PlayerController : MonoBehaviour
         _animatorPlayer = GetComponent<Animator>();
         _rigidbody2DPlayer = GetComponent<Rigidbody2D>();
     }
+    void Start()
+    {
+
+    }
+
     void Update()
     {
         if (!isDead)
@@ -101,9 +101,10 @@ public class PlayerController : MonoBehaviour
                     }
                     //Salto
                     
-                    if (Input.GetButtonDown("Jump") && Input.GetAxisRaw("Vertical") == 0f && isGrounded == true && isAttacking == false)
+                    if (Input.GetButtonDown("Jump") && Input.GetAxisRaw("Vertical") >= 0f && (isGrounded || inLadder) && !isAttacking )
                     {
                         _rigidbody2DPlayer.AddForce(Vector2.up * jumpforcePlayer, ForceMode2D.Impulse);
+                        EndClimbLadder();
                     }
                     //Ataque
                     if (Input.GetButtonDown("Fire1") && isGrounded == true && isAttacking == false)

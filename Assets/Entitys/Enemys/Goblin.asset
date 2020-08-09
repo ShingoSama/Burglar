@@ -16,7 +16,7 @@ MonoBehaviour:
   MaxHealth: 50
   Damage: 10
   Defense: 5
-  AgroRange: 1
+  AgroRange: 10
   MovementNormalSpeed: 3
   MovementAgroSpeed: 4
   Experience: 5
