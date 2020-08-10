@@ -9,7 +9,7 @@ public class InstaDead : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            attackDamage = collision.gameObject.GetComponent<PlayerController>().playerStats.MaxHealth;
+            attackDamage = collision.gameObject.GetComponent<PlayerController>().playerStatsBase.MaxHealth;
             collision.gameObject.GetComponent<PlayerController>().TakeDamage(attackDamage, gameObject.transform.position.x);
         }
     }

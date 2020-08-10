@@ -36,7 +36,7 @@ public class SwingAxe : MonoBehaviour
         {
             if (Time.time > nextAttackTime)
             {
-                float maxhealt = collision.gameObject.GetComponent<PlayerController>().playerStats.MaxHealth;
+                float maxhealt = collision.gameObject.GetComponent<PlayerController>().playerStatsBase.MaxHealth;
                 attackDamage = (25f * maxhealt) / 100f;
                 collision.gameObject.GetComponent<PlayerController>().TakeDamage(attackDamage, gameObject.transform.position.x);
                 nextAttackTime = Time.time + 2f;

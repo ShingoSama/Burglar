@@ -294,7 +294,7 @@ public class Enemy : MonoBehaviour
     }
     public void DamageKnockBack()
     {
-        enemyRB2D.velocity = new Vector2(movementDamage.x, movementDamage.y); ;
+        enemyRB2D.velocity = new Vector2(movementDamage.x, movementDamage.y);
         enemyAnimator.SetTrigger("Hurt");
     }
     public void FreezeEnemy()

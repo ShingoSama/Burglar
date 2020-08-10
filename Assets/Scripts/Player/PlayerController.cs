@@ -5,15 +5,14 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    private PlayerStats playerStats;
     public GameOverMenu gameOverMenu;
     public MainGameMenu mainGameMenu;
     public InventoryUI inventoryUI;
     public HealthBarController healthBarController;
-    public PlayerStatsBase playerStats;
-
+    public PlayerStatsBase playerStatsBase;
     public Interactable focus;
 
-    float currentHealth;
     //Movilidad del jugador
 
     public float speedPlayer;
@@ -28,12 +27,11 @@ public class PlayerController : MonoBehaviour
     public float attackRangeUnEquipPlayer;
     public LayerMask targetLayer;
     public Vector2 movementDamage;
+    public float knockBackDuration;
     private Animator _animatorPlayer;
     private Rigidbody2D _rigidbody2DPlayer;
+    [SerializeField]
     private Vector2 _movementPlayer;
-
-
-
 
     private float longIdleTimePlayer = 6f;
     private float _longIdleTimer;
@@ -48,14 +46,18 @@ public class PlayerController : MonoBehaviour
     private bool isInMenuUI;
     private bool isInInventaryUI;
 
-    private float MaxHealth;
     void Awake()
     {
+        if (PlayerPrefs.GetString("NewGame") == "true" || PlayerPrefs.GetString("NewGame") == "")
+        {
+            Debug.Log("is new game");
+            playerStatsBase.state = PlayerStatsBase.State.Idle;
+            playerStats = gameObject.GetComponent<PlayerStats>();
+            playerStats.MaxHealth.BaseValue = playerStatsBase.MaxHealth;
+            playerStats.SetCurrentHealth(playerStatsBase.MaxHealth);
+        }
         mainGameMenu.PlayerDead(isDead);
-        MaxHealth = playerStats.MaxHealth;
-        playerStats.state = PlayerStatsBase.State.Idle;
-        currentHealth = MaxHealth;
-        healthBarController.SetMaxHealth((float)MaxHealth);
+        healthBarController.SetMaxHealth((float)playerStats.MaxHealth.Value);
         _animatorPlayer = GetComponent<Animator>();
         _rigidbody2DPlayer = GetComponent<Rigidbody2D>();
     }
@@ -63,7 +65,6 @@ public class PlayerController : MonoBehaviour
     {
 
     }
-
     void Update()
     {
         if (!isDead)
@@ -89,6 +90,10 @@ public class PlayerController : MonoBehaviour
                     else
                     {
                         _movementPlayer = new Vector2(horizontalInput, 0f);
+                        if (isGrounded)
+                        {
+                            gameObject.GetComponentInChildren<PlayerRunSound>().PlayRunPlayer(true);
+                        }
                     }
 
                     if (horizontalInput < 0f && facingRight == true)
@@ -122,15 +127,23 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if ((!isAttacking && !inLadder)||(inLadder && isGrounded))
-        {
-            float horizontalVelocity = _movementPlayer.normalized.x * speedPlayer;
-            _rigidbody2DPlayer.velocity = new Vector2(horizontalVelocity, _rigidbody2DPlayer.velocity.y);
-        }
+        //if(isTakeDamage)
+        //{
+        //    //_rigidbody2DPlayer.AddForce(Vector2.left * movementDamage.x, ForceMode2D.Impulse);
+        //    //_rigidbody2DPlayer.AddForce(Vector2.up * movementDamage.y, ForceMode2D.Impulse);
+        //    //_rigidbody2DPlayer.velocity = new Vector2(_rigidbody2DPlayer.velocity.y, movementDamage.y);
+        //}
+        //else
+        //{
+            if (((!isAttacking && !inLadder) || (inLadder && isGrounded)) && !isTakeDamage && !isDead)
+            {
+                float horizontalVelocity = _movementPlayer.normalized.x * speedPlayer;
+                _rigidbody2DPlayer.velocity = new Vector2(horizontalVelocity, _rigidbody2DPlayer.velocity.y);
+            }
+        //}
     }
     private void LateUpdate()
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheckPlayer.position, groundCheckRadius, groundLayer);
         if (inLadder && !isGrounded)
         {
             _animatorPlayer.SetBool("Idle", false);
@@ -138,9 +151,13 @@ public class PlayerController : MonoBehaviour
         else
         {
             _animatorPlayer.SetBool("Idle", _movementPlayer == Vector2.zero);
+            if(_animatorPlayer.GetBool("Idle") || !isGrounded)
+            {
+                gameObject.GetComponentInChildren<PlayerRunSound>().PlayRunPlayer(false);
+            }
         }
-        _animatorPlayer.SetBool("IsGrounded", isGrounded);
         _animatorPlayer.SetFloat("VerticalVelocity", _rigidbody2DPlayer.velocity.y);
+        _animatorPlayer.SetBool("IsGrounded", isGrounded);
         //Animacion de ataque
         if (_animatorPlayer.GetCurrentAnimatorStateInfo(0).IsTag("Attack"))
         {
@@ -196,7 +213,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log(collision.relativeVelocity.y);
             if (collision.relativeVelocity.y > 30f)
             {
-                float damageFall = ((MaxHealth * (collision.relativeVelocity.y - 30f)) / 100f);
+                float damageFall = ((playerStats.MaxHealth.Value * (collision.relativeVelocity.y - 30f)) / 100f);
                 TakeDamage(damageFall, transform.position.x);
             }
         }
@@ -228,7 +245,7 @@ public class PlayerController : MonoBehaviour
         _rigidbody2DPlayer.velocity = Vector2.zero;
         _animatorPlayer.SetTrigger("Attacking");
 
-        float damage = playerStats.Damage;
+        float damage = playerStatsBase.Damage;
         Collider2D[] hitTargets = Physics2D.OverlapCircleAll(attackPointUnEquipPlayer.position, attackRangeUnEquipPlayer, targetLayer);
 
         foreach (Collider2D targets in hitTargets)
@@ -251,17 +268,12 @@ public class PlayerController : MonoBehaviour
         localScaleX = localScaleX * -1f;
         transform.localScale = new Vector3(localScaleX, transform.localScale.y, transform.localScale.z);
     }
-    public void DamageKnockBack()
-    {
-        _rigidbody2DPlayer.velocity = new Vector2(movementDamage.x, movementDamage.y); ;
-        _animatorPlayer.SetTrigger("Hurt");
-    }
     public void TakeDamage(float damage, float positionDamage)
     {
         if (!isDead)
         {
-            currentHealth -= damage;
-            healthBarController.SetHealth(currentHealth);
+            playerStats.TakeDamage(damage);
+            healthBarController.SetHealth(playerStats.GetCurrentHealth());
             if (positionDamage < gameObject.GetComponent<Transform>().position.x && facingRight == true)
             {
                 if (movementDamage.x < 0)
@@ -280,11 +292,17 @@ public class PlayerController : MonoBehaviour
             }
             isTakeDamage = true;
             DamageKnockBack();
-            if (currentHealth <= 0)
+            if (playerStats.GetCurrentHealth() <= 0)
             {
                 PlayerDie();
             }
         }
+    }
+    public void DamageKnockBack()
+    {
+        _rigidbody2DPlayer.AddForce(Vector2.right * movementDamage.x, ForceMode2D.Impulse);
+        _rigidbody2DPlayer.AddForce(Vector2.up * movementDamage.y, ForceMode2D.Impulse);
+        _animatorPlayer.SetTrigger("Hurt");
     }
     public void ClimbLadder()
     {

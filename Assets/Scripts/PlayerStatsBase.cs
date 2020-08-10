@@ -16,13 +16,16 @@ public class PlayerStatsBase : ScriptableObject
 
     public string Name;
     public int Level;
+    public float Experience;
     public float MaxHealth;
     public float Damage;
     public float CriticalChance;
+    public float CriticalDamage;
     public float Defense;
-    public float Movement;
+    public float MovementSpeed;
+    public float AttackSpeed;
+    public float Luck;
     public float JumpForce;
-    public float Experience;
     public State state;
 }
 

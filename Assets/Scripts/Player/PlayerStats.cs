@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-
 public class PlayerStats : MonoBehaviour
 {
     public string Name;
@@ -15,10 +14,17 @@ public class PlayerStats : MonoBehaviour
     public CharacterStats AttackSpeed;
     public CharacterStats Luck;
     public int JumpForce;
-
     public float GetCurrentHealth()
     {
         return currentHealth;
+    }
+    public void SetCurrentHealth(float currenthealth)
+    {
+        currentHealth = currenthealth;
+    }
+    public void TakeDamage(float damage)
+    {
+        currentHealth -= damage;
     }
     //public PlayerStats()
     //{

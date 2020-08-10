@@ -7,16 +7,6 @@ public class PlayerLocationScene : MonoBehaviour
     public PlayerController playerController;
     public PlayableDirector playerStart;
     public PlayableDirector PlayerBosque2;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void SetLocation(string lastSceneLocation)
     {
         if(lastSceneLocation == "Level2")

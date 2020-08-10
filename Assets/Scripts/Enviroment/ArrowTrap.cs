@@ -33,7 +33,7 @@ public class ArrowTrap : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            float maxhealt = collision.gameObject.GetComponent<PlayerController>().playerStats.MaxHealth;
+            float maxhealt = collision.gameObject.GetComponent<PlayerController>().playerStatsBase.MaxHealth;
             damage = (25f * maxhealt) / 100f;
             inTrap = true;
             animationTrap.SetBool("InTrap", inTrap);
