@@ -171,7 +171,8 @@ public class Enemy : MonoBehaviour
             if (Time.time >= nextTouchDamage)
             {
                 nextTouchDamage = Time.time + touchDamage;
-                collision.gameObject.GetComponent<PlayerController>().TakeDamage(attackDamage, gameObject.transform.position.x);
+                float damagetouch = ((collision.gameObject.GetComponent<PlayerController>().playerStats.MaxHealth.Value * (touchDamage)) / 100f);
+                collision.gameObject.GetComponent<PlayerController>().TakeDamage(damagetouch, gameObject.transform.position.x);
             }
             Debug.Log("Toca el player");
         }

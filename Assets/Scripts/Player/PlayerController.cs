@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private PlayerStats playerStats;
+    public PlayerStats playerStats;
     public GameOverMenu gameOverMenu;
     public MainGameMenu mainGameMenu;
     public InventoryUI inventoryUI;
@@ -22,7 +22,8 @@ public class PlayerController : MonoBehaviour
     public LayerMask groundLayer;
 
     // Ataque del jugador
-
+    private int quantityHit;
+    private bool canHit;
     public Transform attackPointUnEquipPlayer;
     public float attackRangeUnEquipPlayer;
     public LayerMask targetLayer;
@@ -48,6 +49,8 @@ public class PlayerController : MonoBehaviour
 
     void Awake()
     {
+        quantityHit = 0;
+        canHit = true;
         if (PlayerPrefs.GetString("NewGame") == "true" || PlayerPrefs.GetString("NewGame") == "")
         {
             Debug.Log("is new game");
@@ -114,7 +117,7 @@ public class PlayerController : MonoBehaviour
                     //Ataque
                     if (Input.GetButtonDown("Fire1") && isGrounded == true && isAttacking == false)
                     {
-                        PlayerUnEquipAttack();
+                        PlayerAttack();
                     }
                     //Interactuar
                     if (Input.GetButtonDown("Interact") && isGrounded == true && isAttacking == false)
@@ -191,10 +194,11 @@ public class PlayerController : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy"))
-        {
-
-        }
+        //float damage = playerStatsBase.Damage;
+        //if (collision.CompareTag("BreakableEnviroment"))
+        //{
+        //    collision.GetComponent<BreakableEnviroment>().TakeDamage(damage, transform.position.x);
+        //}
 
         //if (Time.time >= nextAttackTime)
         //{
@@ -239,12 +243,23 @@ public class PlayerController : MonoBehaviour
         focus = newfocus;
         newfocus.OnFocus(transform);
     }
-    private void PlayerUnEquipAttack()
+    private void PlayerAttack()
     {
-        _movementPlayer = Vector2.zero;
-        _rigidbody2DPlayer.velocity = Vector2.zero;
-        _animatorPlayer.SetTrigger("Attacking");
+        if (canHit)
+        {
+            quantityHit++;
+            _movementPlayer = Vector2.zero;
+            _rigidbody2DPlayer.velocity = Vector2.zero;
 
+            if (quantityHit == 1)
+            {
+                _animatorPlayer.SetTrigger("Attacking");
+                _animatorPlayer.SetInteger("QuantityHit", 1);
+            }
+        }
+    }
+    public void AttackHit()
+    {
         float damage = playerStatsBase.Damage;
         Collider2D[] hitTargets = Physics2D.OverlapCircleAll(attackPointUnEquipPlayer.position, attackRangeUnEquipPlayer, targetLayer);
 
@@ -258,7 +273,28 @@ public class PlayerController : MonoBehaviour
             {
                 targets.GetComponent<BreakableEnviroment>().TakeDamage(damage, transform.position.x);
             }
-
+        }
+    }
+    public void VerifyCombo()
+    {
+        canHit = false;
+        if (_animatorPlayer.GetCurrentAnimatorStateInfo(0).IsName("PlayerAttackingDagger1") && quantityHit == 1)
+        {
+            _animatorPlayer.SetInteger("QuantityHit", 0);
+            canHit = true;
+            quantityHit = 0;
+        }
+        if (_animatorPlayer.GetCurrentAnimatorStateInfo(0).IsName("PlayerAttackingDagger1") && quantityHit >= 2)
+        {
+            canHit = true;
+            _animatorPlayer.SetTrigger("Attacking2");
+            _animatorPlayer.SetInteger("QuantityHit", 2);
+        }
+        if (_animatorPlayer.GetCurrentAnimatorStateInfo(0).IsName("PlayerAttackingDagger2"))
+        {
+            _animatorPlayer.SetInteger("QuantityHit", 0);
+            canHit = true;
+            quantityHit = 0;
         }
     }
     private void FlipPlayer()
@@ -276,18 +312,10 @@ public class PlayerController : MonoBehaviour
             healthBarController.SetHealth(playerStats.GetCurrentHealth());
             if (positionDamage < gameObject.GetComponent<Transform>().position.x && facingRight == true)
             {
-                if (movementDamage.x < 0)
-                {
-                    movementDamage.x *= -1;
-                }
                 FlipPlayer();
             }
             if (positionDamage > gameObject.GetComponent<Transform>().position.x && facingRight == false)
             {
-                if (movementDamage.x > 0)
-                {
-                    movementDamage.x *= -1;
-                }
                 FlipPlayer();
             }
             isTakeDamage = true;
@@ -300,7 +328,14 @@ public class PlayerController : MonoBehaviour
     }
     public void DamageKnockBack()
     {
-        _rigidbody2DPlayer.AddForce(Vector2.right * movementDamage.x, ForceMode2D.Impulse);
+        if (!facingRight)
+        {
+            _rigidbody2DPlayer.AddForce(Vector2.right * movementDamage.x, ForceMode2D.Impulse);
+        }
+        else
+        {
+            _rigidbody2DPlayer.AddForce(Vector2.left * movementDamage.x, ForceMode2D.Impulse);
+        }
         _rigidbody2DPlayer.AddForce(Vector2.up * movementDamage.y, ForceMode2D.Impulse);
         _animatorPlayer.SetTrigger("Hurt");
     }
@@ -340,6 +375,9 @@ public class PlayerController : MonoBehaviour
     public void PlayerDie()
     {
         _animatorPlayer.SetTrigger("IsDead");
+        _movementPlayer = Vector2.zero;
+        _rigidbody2DPlayer.velocity = Vector2.zero;
+        _rigidbody2DPlayer.constraints = RigidbodyConstraints2D.FreezeAll;
         StartCoroutine(DieAnimation());
         isDead = true;
     }

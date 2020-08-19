@@ -1,127 +1,133 @@
 fileFormatVersion: 2
-guid: 1a7ee5b43c8b84945adab47e43264ea8
+guid: e72e1221a371a864b9342ae4fe872e37
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8749302817991680212
-    second: Goblin_0
+      213: -4876676681993874221
+    second: Bandido Re - 1_0
   - first:
-      213: 4475375876111409798
-    second: Goblin_1
+      213: -1990563237758380294
+    second: Bandido Re - 1_1
   - first:
-      213: 3386398104049418772
-    second: Goblin_2
+      213: 5938955871337832627
+    second: Bandido Re - 1_2
   - first:
-      213: 1053128917049471962
-    second: Goblin_3
+      213: 4737193337256204129
+    second: Bandido Re - 1_3
   - first:
-      213: -6101537807208611024
-    second: Goblin_4
+      213: 231461029049713237
+    second: Bandido Re - 1_4
   - first:
-      213: -5209251823262861144
-    second: Goblin_5
+      213: 8224344382653143718
+    second: Bandido Re - 1_5
   - first:
-      213: -5397750920153071603
-    second: Goblin_6
+      213: 5907592667165843055
+    second: Bandido Re - 1_6
   - first:
-      213: 4284684421114291845
-    second: Goblin_7
+      213: -3619675030010389703
+    second: Bandido Re - 1_7
   - first:
-      213: -882355604934026266
-    second: Goblin_8
+      213: -8906648568201413576
+    second: Bandido Re - 1_8
   - first:
-      213: -656960317098500660
-    second: Goblin_9
+      213: 3127749013511613921
+    second: Bandido Re - 1_9
   - first:
-      213: -7558616364029136357
-    second: Goblin_10
+      213: -4860951156273388149
+    second: Bandido Re - 1_10
   - first:
-      213: 5637013169233031891
-    second: Goblin_11
+      213: 4938127659887574705
+    second: Bandido Re - 1_11
   - first:
-      213: -2433050406715337987
-    second: Goblin_12
+      213: -894260025700074795
+    second: Bandido Re - 1_12
   - first:
-      213: 7410269381052723652
-    second: Goblin_13
+      213: -7923329828341529910
+    second: Bandido Re - 1_13
   - first:
-      213: -8114753838996246378
-    second: Goblin_14
+      213: 3307405204623656910
+    second: Bandido Re - 1_14
   - first:
-      213: 1034063651283405445
-    second: Goblin_15
+      213: 39109935160937960
+    second: Bandido Re - 1_15
   - first:
-      213: -9156974997270642521
-    second: Goblin_16
+      213: 8007349085114001273
+    second: Bandido Re - 1_16
   - first:
-      213: -7686792515550203226
-    second: Goblin_17
+      213: -5952700444025748082
+    second: Bandido Re - 1_17
   - first:
-      213: -1065477361527426700
-    second: Goblin_18
+      213: 1122904023053577809
+    second: Bandido Re - 1_18
   - first:
-      213: 4182151675806846688
-    second: Goblin_19
+      213: 2457594745794720791
+    second: Bandido Re - 1_19
   - first:
-      213: 2883100367355995488
-    second: Goblin_20
+      213: -5112661000938232516
+    second: Bandido Re - 1_20
   - first:
-      213: 1339987815390419552
-    second: Goblin_21
+      213: 5463650950945630522
+    second: Bandido Re - 1_21
   - first:
-      213: -6310918314452132059
-    second: Goblin_22
+      213: 3278023341313049658
+    second: Bandido Re - 1_22
   - first:
-      213: 1739241052919130783
-    second: Goblin_23
+      213: -1952884933484534206
+    second: Bandido Re - 1_23
   - first:
-      213: -8005479226253832512
-    second: Goblin_24
+      213: -4878816805967747714
+    second: Bandido Re - 1_24
   - first:
-      213: -5190977205365140737
-    second: Goblin_25
+      213: 224436158324255424
+    second: Bandido Re - 1_25
   - first:
-      213: 2500060783119687262
-    second: Goblin_26
+      213: 7244164574857437513
+    second: Bandido Re - 1_26
   - first:
-      213: 1622535340681119640
-    second: Goblin_27
+      213: 3759703485392954143
+    second: Bandido Re - 1_27
   - first:
-      213: -8209790046853751512
-    second: Goblin_28
+      213: -2774670413001968950
+    second: Bandido Re - 1_28
   - first:
-      213: -8009617909464841280
-    second: Goblin_29
+      213: 547017852725922178
+    second: Bandido Re - 1_29
   - first:
-      213: 6332497213704382148
-    second: Goblin_30
+      213: 3214775187250869193
+    second: Bandido Re - 1_30
   - first:
-      213: -5379714721272170154
-    second: Goblin_31
+      213: 5089831061963378230
+    second: Bandido Re - 1_31
   - first:
-      213: 4281332773599134743
-    second: Goblin_32
+      213: 8639922015365576130
+    second: Bandido Re - 1_32
   - first:
-      213: 9056943577523586822
-    second: Goblin_33
+      213: 5621783035190528016
+    second: Bandido Re - 1_33
   - first:
-      213: 2068521140319348279
-    second: Goblin_34
+      213: -1874246484814043811
+    second: Bandido Re - 1_34
   - first:
-      213: -5381767785105657707
-    second: Goblin_35
+      213: 3960649328905840608
+    second: Bandido Re - 1_35
   - first:
-      213: -8192899111340851506
-    second: Goblin_36
+      213: -5334559382507596488
+    second: Bandido Re - 1_36
   - first:
-      213: -3780074030495910383
-    second: Goblin_37
+      213: 753241444334434735
+    second: Bandido Re - 1_37
   - first:
-      213: -5875507535758309397
-    second: Goblin_38
+      213: -7320699958013848823
+    second: Bandido Re - 1_38
   - first:
-      213: 1408599076990084472
-    second: Goblin_39
+      213: -8096402224831082792
+    second: Bandido Re - 1_39
+  - first:
+      213: -7961707792153790724
+    second: Bandido Re - 1_40
+  - first:
+      213: -5128828616669220404
+    second: Bandido Re - 1_41
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -165,7 +171,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -215,815 +221,887 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Goblin_0
+      name: Bandido Re - 1_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 257
-        width: 33
-        height: 36
+        x: 0
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d0e7b2ae84cb6970800000000000000
-      internalID: 8749302817991680212
+      spriteID: 3d4135d3560925cb0800000000000000
+      internalID: -4876676681993874221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_1
+      name: Bandido Re - 1_1
       rect:
         serializedVersion: 2
-        x: 77
-        y: 257
-        width: 33
-        height: 35
+        x: 128
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68229f3d5aabb1e30800000000000000
-      internalID: 4475375876111409798
+      spriteID: af6d57e18491064e0800000000000000
+      internalID: -1990563237758380294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_2
+      name: Bandido Re - 1_2
       rect:
         serializedVersion: 2
-        x: 142
-        y: 257
-        width: 33
-        height: 34
+        x: 256
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4120ceb3227eefe20800000000000000
-      internalID: 3386398104049418772
+      spriteID: 3b0efc726e86b6250800000000000000
+      internalID: 5938955871337832627
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_3
+      name: Bandido Re - 1_3
       rect:
         serializedVersion: 2
-        x: 205
-        y: 257
-        width: 33
-        height: 32
+        x: 384
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad3fc6b9b277d9e00800000000000000
-      internalID: 1053128917049471962
+      spriteID: 167d083dd34edb140800000000000000
+      internalID: 4737193337256204129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_4
+      name: Bandido Re - 1_4
       rect:
         serializedVersion: 2
-        x: 265
-        y: 257
-        width: 33
-        height: 36
+        x: 512
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03307b111bbf25ba0800000000000000
-      internalID: -6101537807208611024
+      spriteID: 552cadf5490563300800000000000000
+      internalID: 231461029049713237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_5
+      name: Bandido Re - 1_5
       rect:
         serializedVersion: 2
-        x: 331
-        y: 257
-        width: 33
-        height: 36
+        x: 640
+        y: 768
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a87cd8011505b7b0800000000000000
-      internalID: -5209251823262861144
+      spriteID: 6aa158e34adb22270800000000000000
+      internalID: 8224344382653143718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_6
+      name: Bandido Re - 1_6
       rect:
         serializedVersion: 2
-        x: 394
-        y: 274
-        width: 7
-        height: 5
+        x: 0
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d000d3af2265715b0800000000000000
-      internalID: -5397750920153071603
+      spriteID: f6e5f142b3cfbf150800000000000000
+      internalID: 5907592667165843055
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_7
+      name: Bandido Re - 1_7
       rect:
         serializedVersion: 2
-        x: 398
-        y: 257
-        width: 38
-        height: 37
+        x: 128
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 586ea2f97c1467b30800000000000000
-      internalID: 4284684421114291845
+      spriteID: 93b11e1fcb454cdc0800000000000000
+      internalID: -3619675030010389703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_8
+      name: Bandido Re - 1_8
       rect:
         serializedVersion: 2
-        x: 453
-        y: 273
-        width: 5
-        height: 5
+        x: 256
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6eb1552904e31c3f0800000000000000
-      internalID: -882355604934026266
+      spriteID: 83cfc11115a356480800000000000000
+      internalID: -8906648568201413576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_9
+      name: Bandido Re - 1_9
       rect:
         serializedVersion: 2
-        x: 457
-        y: 257
-        width: 35
-        height: 37
+        x: 384
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccdd0d3821202e6f0800000000000000
-      internalID: -656960317098500660
+      spriteID: 1ed20f0082ff76b20800000000000000
+      internalID: 3127749013511613921
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_10
+      name: Bandido Re - 1_10
       rect:
         serializedVersion: 2
-        x: 15
-        y: 193
-        width: 35
-        height: 36
+        x: 512
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b12b694d6766a1790800000000000000
-      internalID: -7558616364029136357
+      spriteID: b85ecc38dae6a8cb0800000000000000
+      internalID: -4860951156273388149
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_11
+      name: Bandido Re - 1_11
       rect:
         serializedVersion: 2
-        x: 81
-        y: 193
-        width: 27
-        height: 37
+        x: 640
+        y: 640
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d2755a7c91ba3e40800000000000000
-      internalID: 5637013169233031891
+      spriteID: 1be312f71f0c78440800000000000000
+      internalID: 4938127659887574705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_12
+      name: Bandido Re - 1_12
       rect:
         serializedVersion: 2
-        x: 153
-        y: 193
-        width: 20
-        height: 37
+        x: 0
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df2dc13cb811c3ed0800000000000000
-      internalID: -2433050406715337987
+      spriteID: 5dab05f9e33f693f0800000000000000
+      internalID: -894260025700074795
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_13
+      name: Bandido Re - 1_13
       rect:
         serializedVersion: 2
-        x: 215
-        y: 193
-        width: 26
-        height: 36
+        x: 128
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c1f993adb096d660800000000000000
-      internalID: 7410269381052723652
+      spriteID: ac2427f208daa0290800000000000000
+      internalID: -7923329828341529910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_14
+      name: Bandido Re - 1_14
       rect:
         serializedVersion: 2
-        x: 276
-        y: 193
-        width: 33
-        height: 35
+        x: 256
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69034e2906a926f80800000000000000
-      internalID: -8114753838996246378
+      spriteID: ec70fdd928346ed20800000000000000
+      internalID: 3307405204623656910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_15
+      name: Bandido Re - 1_15
       rect:
         serializedVersion: 2
-        x: 344
-        y: 193
-        width: 25
-        height: 37
+        x: 384
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58a04e1896bb95e00800000000000000
-      internalID: 1034063651283405445
+      spriteID: 8edc4706742fa8000800000000000000
+      internalID: 39109935160937960
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_16
+      name: Bandido Re - 1_16
       rect:
         serializedVersion: 2
-        x: 410
-        y: 193
-        width: 23
-        height: 37
+        x: 512
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a0cc8671c3ebe080800000000000000
-      internalID: -9156974997270642521
+      spriteID: 977e4c27191df1f60800000000000000
+      internalID: 8007349085114001273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_17
+      name: Bandido Re - 1_17
       rect:
         serializedVersion: 2
-        x: 468
-        y: 193
-        width: 26
-        height: 36
+        x: 640
+        y: 512
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a2bf78fee6035590800000000000000
-      internalID: -7686792515550203226
+      spriteID: e8509832c72c36da0800000000000000
+      internalID: -5952700444025748082
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_18
+      name: Bandido Re - 1_18
       rect:
         serializedVersion: 2
-        x: 10
-        y: 141
-        width: 43
-        height: 38
+        x: 0
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 471ffed1cf9a631f0800000000000000
-      internalID: -1065477361527426700
+      spriteID: 15e27f2724b559f00800000000000000
+      internalID: 1122904023053577809
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_19
+      name: Bandido Re - 1_19
       rect:
         serializedVersion: 2
-        x: 80
-        y: 141
-        width: 35
-        height: 38
+        x: 128
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ee85498accf90a30800000000000000
-      internalID: 4182151675806846688
+      spriteID: 714f5f086612b1220800000000000000
+      internalID: 2457594745794720791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_20
+      name: Bandido Re - 1_20
       rect:
         serializedVersion: 2
-        x: 143
-        y: 147
-        width: 39
-        height: 36
+        x: 256
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0656d004284d20820800000000000000
-      internalID: 2883100367355995488
+      spriteID: c35651e58ed2c09b0800000000000000
+      internalID: -5112661000938232516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_21
+      name: Bandido Re - 1_21
       rect:
         serializedVersion: 2
-        x: 194
-        y: 145
-        width: 51
-        height: 35
+        x: 384
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06a92bb81d7989210800000000000000
-      internalID: 1339987815390419552
+      spriteID: a39e6db9799c2db40800000000000000
+      internalID: 5463650950945630522
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_22
+      name: Bandido Re - 1_22
       rect:
         serializedVersion: 2
-        x: 275
-        y: 135
-        width: 33
-        height: 36
+        x: 512
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52fd29cca3d1b68a0800000000000000
-      internalID: -6310918314452132059
+      spriteID: a3447687cd0ed7d20800000000000000
+      internalID: 3278023341313049658
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_23
+      name: Bandido Re - 1_23
       rect:
         serializedVersion: 2
-        x: 341
-        y: 137
-        width: 28
-        height: 36
+        x: 640
+        y: 384
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9a6502d586032810800000000000000
-      internalID: 1739241052919130783
+      spriteID: 2462174ff75f5e4e0800000000000000
+      internalID: -1952884933484534206
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_24
+      name: Bandido Re - 1_24
       rect:
         serializedVersion: 2
-        x: 400
-        y: 137
-        width: 29
-        height: 34
+        x: 0
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ce0f5efe03d6e090800000000000000
-      internalID: -8005479226253832512
+      spriteID: e75261cc6f5fa4cb0800000000000000
+      internalID: -4878816805967747714
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_25
+      name: Bandido Re - 1_25
       rect:
         serializedVersion: 2
-        x: 465
-        y: 138
-        width: 29
-        height: 34
+        x: 128
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff29f051cb1f5f7b0800000000000000
-      internalID: -5190977205365140737
+      spriteID: 0caaba33f7b5d1300800000000000000
+      internalID: 224436158324255424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_26
+      name: Bandido Re - 1_26
       rect:
         serializedVersion: 2
-        x: 11
-        y: 72
-        width: 29
-        height: 34
+        x: 256
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5edbbe490002b220800000000000000
-      internalID: 2500060783119687262
+      spriteID: 941a8d2bc41788460800000000000000
+      internalID: 7244164574857437513
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_27
+      name: Bandido Re - 1_27
       rect:
         serializedVersion: 2
-        x: 79
-        y: 74
-        width: 31
-        height: 35
+        x: 384
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 897c0d8bb47648610800000000000000
-      internalID: 1622535340681119640
+      spriteID: f1325a376662d2430800000000000000
+      internalID: 3759703485392954143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_28
+      name: Bandido Re - 1_28
       rect:
         serializedVersion: 2
-        x: 130
-        y: 67
-        width: 88
-        height: 46
+        x: 512
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82d9eb02377f01e80800000000000000
-      internalID: -8209790046853751512
+      spriteID: ac23b30d5f36e79d0800000000000000
+      internalID: -2774670413001968950
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_29
+      name: Bandido Re - 1_29
       rect:
         serializedVersion: 2
-        x: 280
-        y: 67
-        width: 87
-        height: 46
+        x: 640
+        y: 256
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c3cdb7b2fe18d090800000000000000
-      internalID: -8009617909464841280
+      spriteID: 289868db6d5679700800000000000000
+      internalID: 547017852725922178
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_30
+      name: Bandido Re - 1_30
       rect:
         serializedVersion: 2
-        x: 393
-        y: 76
-        width: 43
-        height: 30
+        x: 0
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c620043aac81e750800000000000000
-      internalID: 6332497213704382148
+      spriteID: 9c3f3dc000d2d9c20800000000000000
+      internalID: 3214775187250869193
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_31
+      name: Bandido Re - 1_31
       rect:
         serializedVersion: 2
-        x: 473
-        y: 68
-        width: 23
-        height: 40
+        x: 128
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 659f1a5c6f96755b0800000000000000
-      internalID: -5379714721272170154
+      spriteID: 63e831f3266b2a640800000000000000
+      internalID: 5089831061963378230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_32
+      name: Bandido Re - 1_32
       rect:
         serializedVersion: 2
-        x: 4
-        y: 8
-        width: 39
-        height: 25
+        x: 256
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7144d9f59795a6b30800000000000000
-      internalID: 4281332773599134743
+      spriteID: 2c531f4fb4b27e770800000000000000
+      internalID: 8639922015365576130
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_33
+      name: Bandido Re - 1_33
       rect:
         serializedVersion: 2
-        x: 65
-        y: 10
-        width: 34
-        height: 25
+        x: 384
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6078c01b23ab0bd70800000000000000
-      internalID: 9056943577523586822
+      spriteID: 01849d092e5940e40800000000000000
+      internalID: 5621783035190528016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_34
+      name: Bandido Re - 1_34
       rect:
         serializedVersion: 2
-        x: 136
-        y: 18
-        width: 34
-        height: 25
+        x: 512
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 736ee13840dd4bc10800000000000000
-      internalID: 2068521140319348279
+      spriteID: d55622390c65df5e0800000000000000
+      internalID: -1874246484814043811
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_35
+      name: Bandido Re - 1_35
       rect:
         serializedVersion: 2
-        x: 194
-        y: 9
-        width: 38
-        height: 27
+        x: 640
+        y: 128
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 590f22996be1055b0800000000000000
-      internalID: -5381767785105657707
+      spriteID: 0e76259849d07f630800000000000000
+      internalID: 3960649328905840608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_36
+      name: Bandido Re - 1_36
       rect:
         serializedVersion: 2
-        x: 277
-        y: 9
-        width: 77
-        height: 29
+        x: 0
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ece3ae38aa9fc4e80800000000000000
-      internalID: -8192899111340851506
+      spriteID: 835586c5186d7f5b0800000000000000
+      internalID: -5334559382507596488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Goblin_37
+      name: Bandido Re - 1_37
       rect:
         serializedVersion: 2
-        x: 402
-        y: 16
-        width: 79
-        height: 25
+        x: 128
+        y: 0
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 116bc9b62ba7a8bc0800000000000000
-      internalID: -3780074030495910383
+      spriteID: fa9f7af4a1d047a00800000000000000
+      internalID: 753241444334434735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandido Re - 1_38
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9031e57cc26a76a90800000000000000
+      internalID: -7320699958013848823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandido Re - 1_39
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dec246b21dc3af80800000000000000
+      internalID: -8096402224831082792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandido Re - 1_40
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf6b63b22f4528190800000000000000
+      internalID: -7961707792153790724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bandido Re - 1_41
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc1b29dfb8db2d8b0800000000000000
+      internalID: -5128828616669220404
       vertices: []
       indices: 
       edges: []

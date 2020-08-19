@@ -9,6 +9,7 @@ TagManager:
   - Trap
   - Ladder
   - Ground
+  - BreakableEnviroment
   layers:
   - Default
   - TransparentFX
